@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektWedkarski.AddPostPage"
+              Title="Dodaj Post">
+    <StackLayout Padding="10">
+        <Entry x:Name="PostTitle" Placeholder="Tytuł postu" />
+        <Editor x:Name="PostContent" Placeholder="Treść postu" HeightRequest="100" />
+        <Button Text="Dodaj" Clicked="OnSubmitClicked"/>
+    </StackLayout>
+</ContentPage>
