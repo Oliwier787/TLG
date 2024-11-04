@@ -1,0 +1,15 @@
+Dodawanie użytkownika:
+INSERT INTO user (ID, e-mail, nick, haslo) VALUES (NULL, '', '', '');
+
+Dodanie posta:
+INSERT INTO `post`(`id`, `tytul`, `tresc`, `user_id`, `galeria_id`) VALUES ('NOT NULL','','','','');
+
+Dodanie zdjęcia:
+INSERT INTO `galeria`(`ID`, `zdjecie`, `user_id`, `post_id`) VALUES ('NOT NULL','','','');
+
+Dodanie opinii:
+INSERT INTO `opinie`(`ID`, `user_ID`, `opinia`, `ilosc_gwiazdek`, `post_id`) VALUES ('NOT NULL','','','','');
+
+Wyszukanie posta:
+SELECT tytul, tresc , zdjecie FROM `post`, `galeria` WHERE post.user_id = galeria.user_id;
+
